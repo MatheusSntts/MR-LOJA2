@@ -43,6 +43,7 @@ body {
 
 .logo {
   height: 150px;
+  border: none;
 }
 
 .menu a {
@@ -67,6 +68,12 @@ body {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+}
+.btn-conta:hover{
+  opacity: .8;
+}
+.btn-conta:active{
+  opacity: .5;
 }
 
 /* HERO */
@@ -145,6 +152,12 @@ body {
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
+}
+.btn-comprar:hover{
+  opacity: .8;
+}
+.btn-comprar:active{
+  opacity: .5;
 }
 
 /* SOBRE */
