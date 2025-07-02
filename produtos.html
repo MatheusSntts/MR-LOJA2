@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos - Mundo da Ração</title>
+  <link rel="stylesheet" href="produtos.css" />
+</head>
+<body>
+  <header class="topo">
+    <h1>Mundo da Ração</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <h2>Todos os Produtos</h2>
+
+      <!-- Filtro de categorias -->
+      <div class="filtros">
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('cachorro')">Cachorros</button>
+        <button onclick="filtrar('gato')">Gatos</button>
+        <button onclick="filtrar('bovino')">Bovinos</button>
+        <button onclick="filtrar('suino')">Suínos</button>
+        <button onclick="filtrar('cavalo')">Cavalos</button>
+      </div>
+
+      <!-- Lista de produtos -->
+      <div class="grid-produtos">
+        <!-- Produto por categoria -->
+        <div class="produto cachorro">
+          <img src="img/racao-cachorro.jpg" alt="Ração para Cachorro" />
+          <h3>Ração para Cachorro</h3>
+          <button>Comprar</button>
+        </div>
+
+        <div class="produto gato">
+          <img src="img/racao-gato.jpg" alt="Ração para Gato" />
+          <h3>Ração para Gato</h3>
+          <button>Comprar</button>
+        </div>
+
+        <div class="produto bovino">
+          <img src="img/racao-boi.jpg" alt="Ração para Boi" />
+          <h3>Ração para Boi</h3>
+          <button>Comprar</button>
+        </div>
+
+        <div class="produto suino">
+          <img src="img/racao-porco.jpg" alt="Ração para Porco" />
+          <h3>Ração para Porco</h3>
+          <button>Comprar</button>
+        </div>
+
+        <div class="produto cavalo">
+          <img src="img/racao-cavalo.jpg" alt="Ração para Cavalo" />
+          <h3>Ração para Cavalo</h3>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function filtrar(categoria) {
+      const produtos = document.querySelectorAll('.produto');
+      produtos.forEach(produto => {
+        produto.style.display =
+          categoria === 'todos' || produto.classList.contains(categoria)
+            ? 'block'
+            : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
