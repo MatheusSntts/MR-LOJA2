@@ -13,6 +13,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.topo a:hover{
+ opacity: .8;
+}
+.topo a:active{
+  opacity: .5;
+}
 
 .topo nav a {
   color: white;
