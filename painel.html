@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bem-vindo | Mundo da Ração</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #0047ff;
+      }
+
+      .btn-voltar {
+        margin-top: 30px;
+        display: inline-block;
+        background-color: #0047ff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+
+      .btn-voltar:hover {
+        background-color: #0033cc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="mensagemBoasVindas">Carregando...</h1>
+    <button onclick="logout()">Sair</button>
+    <a href="index.html" class="btn-voltar">Voltar para Home</a>
+
+    <script>
+      const nome = localStorage.getItem("usuarioLogado");
+      const mensagem = document.getElementById("mensagemBoasVindas");
+
+      if (nome) {
+        mensagem.textContent = `Bem-vindo(a), ${nome.split(" ")[0]}!`;
+      } else {
+        mensagem.textContent = "Usuário não logado.";
+      }
+      function logout() {
+        localStorage.removeItem("usuarioLogado");
+        window.location.href = "conta.html";
+      }
+    </script>
+  </body>
+</html>
