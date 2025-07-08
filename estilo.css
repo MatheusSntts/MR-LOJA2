@@ -50,7 +50,12 @@ body {
   margin: 0 15px;
   color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
+  
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px;
+
 }
 .menu a:hover{
     opacity: .8;
