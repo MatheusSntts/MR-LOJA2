@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nome": "João Silva",
+    "email": "joao@example.com",
+    "telefone": "123456789",
+    "carrinho": [
+      {
+        "id": 1,
+        "nome": "Ração para Cães",
+        "quantidade": 2,
+        "preco": 100.00
+      }
+    ],
+    "data": "2025-01-01T10:00:00Z"
+  }
+]

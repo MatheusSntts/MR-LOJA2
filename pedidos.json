@@ -1,0 +1,74 @@
+[
+  {
+    "nome": "Teste Silva Pereira",
+    "email": "mssjunior999@gmail.com",
+    "endereco": "Rua da redenção 205",
+    "produtos": [
+      {
+        "nome": "Ração Cachorro 2",
+        "preco": 35,
+        "imagem": "imagens/racao-cachorro2.png",
+        "quantidade": 1
+      },
+      {
+        "nome": "Ração Cachorro 1",
+        "preco": 29.99,
+        "imagem": "imagens/racao-cachorro1.jpg",
+        "quantidade": 1
+      },
+      {
+        "nome": "Ração Gato 1",
+        "preco": 25.5,
+        "imagem": "imagens/racao-gato1.png",
+        "quantidade": 11
+      }
+    ],
+    "total": 90.49
+  },
+  {
+    "nome": "Teste Silva Pereira",
+    "email": "mssjunior999@gmail.com",
+    "endereco": "Rua da redenção 205",
+    "produtos": [
+      {
+        "nome": "Ração Gato 1",
+        "preco": 25.5,
+        "imagem": "imagens/racao-gato1.png",
+        "quantidade": 1
+      },
+      {
+        "nome": "Ração Cachorro 2",
+        "preco": 35,
+        "imagem": "imagens/racao-cachorro2.png",
+        "quantidade": 1
+      }
+    ],
+    "total": 60.5
+  },
+  {
+    "nome": "tarsilla",
+    "email": "tmdinisio@gmail.com",
+    "endereco": "ainnnn",
+    "produtos": [
+      {
+        "nome": "Ração Cachorro 1",
+        "preco": 29.99,
+        "imagem": "imagens/racao-cachorro1.jpg",
+        "quantidade": 5
+      },
+      {
+        "nome": "Ração Cachorro 2",
+        "preco": 35,
+        "imagem": "imagens/racao-cachorro2.png",
+        "quantidade": 3
+      },
+      {
+        "nome": "Ração Gato 1",
+        "preco": 25.5,
+        "imagem": "imagens/racao-gato1.png",
+        "quantidade": 2
+      }
+    ],
+    "total": 90.49
+  }
+]

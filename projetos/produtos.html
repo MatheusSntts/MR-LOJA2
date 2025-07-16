@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produtos | Mundo da Ração</title>
+  <link rel="stylesheet" href="produtos.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="imagens/img-logo2.png" alt="Logo Mundo da Ração" /></a>
+      </div>
+      <ul class="menu">
+        <h1>Produtos</h1>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html" >Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produtos-container">
+      
+
+      <div class="filtros">
+        <button onclick="filtrarProdutos('todos')">Todos</button>
+        <button onclick="filtrarProdutos('cachorros')">Cachorros</button>
+        <button onclick="filtrarProdutos('gatos')">Gatos</button>
+        <button onclick="filtrarProdutos('bovinos')">Bovinos</button>
+        <button onclick="filtrarProdutos('suinos')">Suínos</button>
+        <button onclick="filtrarProdutos('cavalos')">Cavalos</button>
+      </div>
+
+      <div class="grid">
+        <div class="produto cachorros" data-nome="Ração Cachorro 1" data-preco="29.99" data-img="imagens/racao-cachorro1.jpg">
+          <img src="imagens/ração-cachorro.jpg" alt="Ração Cachorro 1" />
+          <p>Ração Cachorro 1</p>
+          <p class="preco">R$ 29,99</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="produto cachorros" data-nome="Ração Cachorro 2" data-preco="35.00" data-img="imagens/racao-cachorro2.png">
+          <img src="imagens/racao-cachorro2.png" alt="Ração Cachorro 2" />
+          <p>Ração Cachorro 2</p>
+          <p class="preco">R$ 35,00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <div class="produto gatos" data-nome="Ração Gato 1" data-preco="25.50" data-img="imagens/racao-gato1.png">
+          <img src="imagens/ração-gato.png" alt="Ração Gato 1" />
+          <p>Ração Gato 1</p>
+          <p class="preco">R$ 25,50</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+         <div class="produto cavalo" data-nome="Ração Cavalo 1" data-preco="45.00" data-img="imagens/racao-cavalo">
+          <img src="imagens/cavalo1.jpg" alt="Ração Cavalo 1" />
+          <p>Ração Cavalo 1</p>
+          <p class="preco">R$ 45,00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+          <div class="produto cavalos " data-nome="Ração Cavalo 1" data-preco="45.00" data-img="imagens/racao-cavalo">
+          <img src="imagens/cavalo2.jpg" alt="Ração Cavalo 1" />
+          <p>Ração Cavalo 1</p>
+          <p class="preco">R$ 45,00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+         <div class="produto bovinos" data-nome="Ração Boi 1" data-preco="25.50" data-img="imagens/racao-boi1.png">
+          <img src="imagens/ração-boi.jpg" alt="Ração Boi 1" />
+          <p>Ração Boi 1</p>
+          <p class="preco">R$ 25,50</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+         <div class="produto bovinos" data-nome="Ração Boi 2" data-preco="25.50" data-img="imagens/racao-boi2.png">
+          <img src="imagens/animais-felizes.avif" alt="Ração Boi 2" />
+          <p>Ração Boi 2</p>
+          <p class="preco">R$ 25,50</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        
+
+         <div class="produto suinos" data-nome="Ração Suíno 1" data-preco="25.50" data-img="imagens/racao-suino1.png">
+          <img src="imagens/ração-porco1.jpg"Ração Suíno 1" />
+          <p>Ração Suíno 1</p>
+          <p class="preco">R$ 25,50</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- Adicione mais produtos aqui no mesmo padrão -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão flutuante do carrinho -->
+  <button id="btn-carrinho-flutuante" aria-label="Abrir carrinho" class="btn-carrinho-flutuante">
+    🛒 <span id="contador-carrinho-flutuante">0</span>
+  </button>
+
+  <!-- Painel flutuante do carrinho -->
+  <div id="painel-carrinho-flutuante" class="painel-carrinho-fechado" aria-label="Carrinho de compras">
+    <header>
+      <img src="imagens/img-logo2.png" alt="Logo Mundo da Ração" class="logo-carrinho" />
+      <button id="btn-fechar-carrinho-flutuante" aria-label="Fechar carrinho">&times;</button>
+    </header>
+    <div id="lista-produtos-carrinho-flutuante" class="lista-produtos-carrinho"></div>
+    <div id="total-carrinho-flutuante" class="total-carrinho">Total: R$ 0,00</div>
+    <button id="btn-finalizar-compra-flutuante" class="btn-finalizar-compra">Finalizar Compra</button>
+  </div>
+
+  <script src="produtos.js"></script>
+</body>
+</html>
