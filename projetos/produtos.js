@@ -123,11 +123,26 @@ renderizarCarrinho();
 // Função para filtrar produtos
 function filtrarProdutos(categoria) {
   const produtos = document.querySelectorAll('.produto');
+
   produtos.forEach(produto => {
-    if (categoria === 'todos' || produto.classList.contains(categoria)) {
-      produto.style.display = 'block';
-    } else {
+    const deveExibir = categoria === 'todos' || produto.classList.contains(categoria);
+
+    produto.classList.remove('fadeInProduto', 'fadeOutProduto');
+    
+    if (!deveExibir) {
+      // Esconder imediatamente para evitar movimentação lateral
       produto.style.display = 'none';
+    }
+  });
+
+  // Agora exibe e anima os produtos que devem aparecer
+  produtos.forEach(produto => {
+    const deveExibir = categoria === 'todos' || produto.classList.contains(categoria);
+
+    if (deveExibir) {
+      produto.style.display = 'block';
+      void produto.offsetWidth; // força reflow para reiniciar animação
+      produto.classList.add('fadeInProduto');
     }
   });
 }
